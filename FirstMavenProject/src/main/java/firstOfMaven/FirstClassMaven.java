@@ -19,7 +19,7 @@ public class FirstClassMaven {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
-
+    
 	@Test(dataProvider="testData")
 	public void login(String username, String password) throws InterruptedException {
 		
